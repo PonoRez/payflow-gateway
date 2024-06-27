@@ -703,13 +703,13 @@ public final class PayflowConstants {
      */
     protected static final String PARAM_ACSURL = "ACSURL";
     /**
-     * Payflow Param AUTHENICATION_ID
+     * Payflow Param AUTHENTICATION_ID
      */
     protected static final String PARAM_AUTHENTICATION_ID = "AUTHENTICATION_ID";
     /**
-     * Payflow Param AUTHENICATION_STATUS
+     * Payflow Param AUTHENTICATION_STATUS
      */
-    protected static final String PARAM_AUTHENICATION_STATUS = "AUTHENTICATION_STATUS";
+    protected static final String PARAM_AUTHENTICATION_STATUS = "AUTHENTICATION_STATUS";
     /**
      * Payflow Param CAVV
      */

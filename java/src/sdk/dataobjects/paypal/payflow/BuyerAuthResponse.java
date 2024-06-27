@@ -184,7 +184,7 @@ public class BuyerAuthResponse extends BaseResponseDataObject {
 
         acsUrl = (String) ResponseHashTable.get(PayflowConstants.PARAM_ACSURL);
         authenticationId = (String) ResponseHashTable.get(PayflowConstants.PARAM_AUTHENTICATION_ID);
-        authenticationStatus = (String) ResponseHashTable.get(PayflowConstants.PARAM_AUTHENICATION_STATUS);
+        authenticationStatus = (String) ResponseHashTable.get(PayflowConstants.PARAM_AUTHENTICATION_STATUS);
         cavv = (String) ResponseHashTable.get(PayflowConstants.PARAM_CAVV);
         eci = (String) ResponseHashTable.get(PayflowConstants.PARAM_ECI);
         md = (String) ResponseHashTable.get(PayflowConstants.PARAM_MD);
@@ -192,7 +192,7 @@ public class BuyerAuthResponse extends BaseResponseDataObject {
         xid = (String) ResponseHashTable.get(PayflowConstants.PARAM_XID);
         ResponseHashTable.remove(PayflowConstants.PARAM_ACSURL);
         ResponseHashTable.remove(PayflowConstants.PARAM_AUTHENTICATION_ID);
-        ResponseHashTable.remove(PayflowConstants.PARAM_AUTHENICATION_STATUS);
+        ResponseHashTable.remove(PayflowConstants.PARAM_AUTHENTICATION_STATUS);
         ResponseHashTable.remove(PayflowConstants.PARAM_CAVV);
         ResponseHashTable.remove(PayflowConstants.PARAM_ECI);
         ResponseHashTable.remove(PayflowConstants.PARAM_MD);

@@ -176,8 +176,8 @@ namespace PayPal.Payments.DataObjects
 		{
 			try
 			{
-				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_AUTHENICATION_ID, mAuthenticationId));
-				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_AUTHENICATION_STATUS, mAuthenticationStatus));
+				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_AUTHENTICATION_ID, mAuthenticationId));
+				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_AUTHENTICATION_STATUS, mAuthenticationStatus));
 				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_ECI, mECI));
 				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_CAVV, mCAVV));
 				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_XID, mXID));

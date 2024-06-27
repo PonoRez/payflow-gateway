@@ -1728,14 +1728,14 @@
             Payflow Param ACSURL
             </summary>
         </member>
-        <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_AUTHENICATION_ID">
+        <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_AUTHENTICATION_ID">
             <summary>
-            Payflow Param AUTHENICATION_ID
+            Payflow Param AUTHENTICATION_ID
             </summary>
         </member>
-        <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_AUTHENICATION_STATUS">
+        <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_AUTHENTICATION_STATUS">
             <summary>
-            Payflow Param AUTHENICATION_STATUS
+            Payflow Param AUTHENTICATION_STATUS
             </summary>
         </member>
         <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_CAVV">

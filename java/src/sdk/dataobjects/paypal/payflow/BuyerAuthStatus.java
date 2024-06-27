@@ -157,7 +157,7 @@ public class BuyerAuthStatus extends BaseRequestDataObject {
     protected void generateRequest() {
 
         this.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_AUTHENTICATION_ID, this.authenticationId));
-        this.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_AUTHENICATION_STATUS, this.authenticationStatus));
+        this.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_AUTHENTICATION_STATUS, this.authenticationStatus));
         this.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_CAVV, this.cavv));
         this.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_XID, this.xid));
         this.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_ECI, this.eci));

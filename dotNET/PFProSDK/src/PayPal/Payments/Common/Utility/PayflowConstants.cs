@@ -965,13 +965,13 @@ namespace PayPal.Payments.Common.Utility
         /// </summary>
         internal const String PARAM_ACSURL = "ACSURL";
         /// <summary>
-        /// Payflow Param AUTHENICATION_ID
+        /// Payflow Param AUTHENTICATION_ID
         /// </summary>
-        internal const String PARAM_AUTHENICATION_ID = "AUTHENTICATION_ID";
+        internal const String PARAM_AUTHENTICATION_ID = "AUTHENTICATION_ID";
         /// <summary>
-        /// Payflow Param AUTHENICATION_STATUS
+        /// Payflow Param AUTHENTICATION_STATUS
         /// </summary>
-        internal const String PARAM_AUTHENICATION_STATUS = "AUTHENTICATION_STATUS";
+        internal const String PARAM_AUTHENTICATION_STATUS = "AUTHENTICATION_STATUS";
         /// <summary>
         /// Payflow Param CAVV
         /// </summary>

@@ -173,8 +173,8 @@ namespace PayPal.Payments.DataObjects
 		internal void SetParams(ref Hashtable ResponseHashTable)
 		{
 			mAcsUrl = (String) ResponseHashTable[PayflowConstants.PARAM_ACSURL];
-			mAuthenticationId = (String) ResponseHashTable[PayflowConstants.PARAM_AUTHENICATION_ID];
-			mAuthenticationStatus = (String) ResponseHashTable[PayflowConstants.PARAM_AUTHENICATION_STATUS];
+			mAuthenticationId = (String) ResponseHashTable[PayflowConstants.PARAM_AUTHENTICATION_ID];
+			mAuthenticationStatus = (String) ResponseHashTable[PayflowConstants.PARAM_AUTHENTICATION_STATUS];
 			mCavv = (String) ResponseHashTable[PayflowConstants.PARAM_CAVV];
 			mEci = (String) ResponseHashTable[PayflowConstants.PARAM_ECI];
 			mMd = (String) ResponseHashTable[PayflowConstants.PARAM_MD];
@@ -182,8 +182,8 @@ namespace PayPal.Payments.DataObjects
 			mXid = (String) ResponseHashTable[PayflowConstants.PARAM_XID];
 
 			ResponseHashTable.Remove(PayflowConstants.PARAM_ACSURL);
-			ResponseHashTable.Remove(PayflowConstants.PARAM_AUTHENICATION_ID);
-			ResponseHashTable.Remove(PayflowConstants.PARAM_AUTHENICATION_STATUS);
+			ResponseHashTable.Remove(PayflowConstants.PARAM_AUTHENTICATION_ID);
+			ResponseHashTable.Remove(PayflowConstants.PARAM_AUTHENTICATION_STATUS);
 			ResponseHashTable.Remove(PayflowConstants.PARAM_CAVV);
 			ResponseHashTable.Remove(PayflowConstants.PARAM_ECI);
 			ResponseHashTable.Remove(PayflowConstants.PARAM_MD);
