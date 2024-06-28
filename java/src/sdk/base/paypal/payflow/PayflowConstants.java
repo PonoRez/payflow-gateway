@@ -1905,7 +1905,7 @@ public final class PayflowConstants {
     protected static final String PARAM_HDRBORDERCOLOR = "HDRBORDERCOLOR";
     protected static final String PARAM_HDRBACKCOLOR = "HDRBACKCOLOR";
     protected static final String PARAM_PAYFLOWCOLOR = "PAYFLOWCOLOR";
-    protected static final String PARAM_MAXAMT = "PARAM_MAXAMT";
+    protected static final String PARAM_MAXAMT = "MAXAMT";
     protected static final String PARAM_ITEMAMT = "ITEMAMT";
     protected static final String PARAM_L_ITEMNUMBER = "L_ITEMNUMBER";
     protected static final String PARAM_ORDERDESC = "ORDERDESC";
