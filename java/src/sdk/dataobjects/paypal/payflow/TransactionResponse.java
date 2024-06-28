@@ -803,8 +803,8 @@ public final class TransactionResponse extends BaseResponseDataObject {
         amexId = (String) ResponseHashTable.get(PayflowConstants.PARAM_AMEXID);
         amexPosData = (String) ResponseHashTable.get(PayflowConstants.PARAM_AMEXPOSDATA);
         acct = (String) ResponseHashTable.get(PayflowConstants.PARAM_ACCT);
-        billToLastName = (String) ResponseHashTable.get(PayflowConstants.PARAM_LASTNAME);
-        billToFirstName = (String) ResponseHashTable.get(PayflowConstants.PARAM_FIRSTNAME);
+        billToLastName = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOLASTNAME);
+        billToFirstName = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOFIRSTNAME);
         amt = (String) ResponseHashTable.get(PayflowConstants.PARAM_AMT);
         transTime = (String) ResponseHashTable.get(PayflowConstants.PARAM_TRANSTIME);
         expDate = (String) ResponseHashTable.get(PayflowConstants.PARAM_EXPDATE);

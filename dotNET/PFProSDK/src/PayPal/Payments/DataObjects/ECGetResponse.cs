@@ -262,7 +262,7 @@ namespace PayPal.Payments.DataObjects
 		{
 			try
 			{
-				mEMail = (String) ResponseHashTable[PayflowConstants.PARAM_EMAIL];
+				mEMail = (String) ResponseHashTable[PayflowConstants.PARAM_BILLTOEMAIL];
 				mPayerId = (String) ResponseHashTable[PayflowConstants.PARAM_PAYERID];
 				mPayerStatus = (String) ResponseHashTable[PayflowConstants.PARAM_PAYERSTATUS];
 				mShipToFirstName = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOFIRSTNAME];
@@ -270,19 +270,19 @@ namespace PayPal.Payments.DataObjects
 				mShipToCountryCode = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOCOUNTRY];
 				mShipToBusiness = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOBUSINESS];
 				mAddrStatus = (String) ResponseHashTable[PayflowConstants.PARAM_ADDRSTATUS];
-				mFirstName = (String) ResponseHashTable[PayflowConstants.PARAM_FIRSTNAME];
-				mLastName = (String) ResponseHashTable[PayflowConstants.PARAM_LASTNAME];
+				mFirstName = (String) ResponseHashTable[PayflowConstants.PARAM_BILLTOFIRSTNAME];
+				mLastName = (String) ResponseHashTable[PayflowConstants.PARAM_BILLTOLASTNAME];
 				mStreet = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOSTREET];
 				mStreet2 = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOSTREET2];
 				mCity = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOCITY];
 				mState = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOSTATE];
 				mPostalCode = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOZIP];
 				mCountryCode = (String) ResponseHashTable[PayflowConstants.PARAM_COUNTRYCODE];
-				mPhoneNum = (String) ResponseHashTable[PayflowConstants.PARAM_PHONENUM];
+				mPhoneNum = (String) ResponseHashTable[PayflowConstants.PARAM_BILLTOPHONENUM];
 				mBA_Flag = (String) ResponseHashTable[PayflowConstants.PARAM_BA_FLAG];
 
 
-				ResponseHashTable.Remove(PayflowConstants.PARAM_EMAIL);
+				ResponseHashTable.Remove(PayflowConstants.PARAM_BILLTOEMAIL);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_PAYERID);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_PAYERSTATUS);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_SHIPTOFIRSTNAME);
@@ -290,15 +290,15 @@ namespace PayPal.Payments.DataObjects
 				ResponseHashTable.Remove(PayflowConstants.PARAM_SHIPTOCOUNTRY);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_SHIPTOBUSINESS);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_ADDRSTATUS);
-				ResponseHashTable.Remove(PayflowConstants.PARAM_FIRSTNAME);
-				ResponseHashTable.Remove(PayflowConstants.PARAM_LASTNAME);
+				ResponseHashTable.Remove(PayflowConstants.PARAM_BILLTOFIRSTNAME);
+				ResponseHashTable.Remove(PayflowConstants.PARAM_BILLTOLASTNAME);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_SHIPTOSTREET);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_SHIPTOSTREET2);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_SHIPTOCITY);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_SHIPTOSTATE);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_SHIPTOZIP);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_COUNTRYCODE);
-				ResponseHashTable.Remove(PayflowConstants.PARAM_PHONENUM);
+				ResponseHashTable.Remove(PayflowConstants.PARAM_BILLTOPHONENUM);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_BA_FLAG);
 			}
 			catch (BaseException)

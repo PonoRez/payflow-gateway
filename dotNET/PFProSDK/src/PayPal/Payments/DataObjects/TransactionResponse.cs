@@ -1367,10 +1367,10 @@ namespace PayPal.Payments.DataObjects
 			mAmexID = (String)ResponseHashTable[PayflowConstants.PARAM_AMEXID];
 			mAmexPosData = (String)ResponseHashTable[PayflowConstants.PARAM_AMEXPOSDATA];
 			mAcct = (String)ResponseHashTable[PayflowConstants.PARAM_ACCT];
-			mLastName = (String)ResponseHashTable[PayflowConstants.PARAM_LASTNAME];
+			mLastName = (String)ResponseHashTable[PayflowConstants.PARAM_BILLTOLASTNAME];
             // due to issue where ACH doesn't support BILLTOFIRSTNAME we have to use legacy FIRSTNAME to get response value.
             if (ResponseHashTable["FIRSTNAME"] == null)
-                mFirstName = (String)ResponseHashTable[PayflowConstants.PARAM_FIRSTNAME];
+                mFirstName = (String)ResponseHashTable[PayflowConstants.PARAM_BILLTOFIRSTNAME];
             else
                 mFirstName = (String)ResponseHashTable["FIRSTNAME"];
             mAmt = (String)ResponseHashTable[PayflowConstants.PARAM_AMT];

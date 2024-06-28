@@ -414,20 +414,20 @@ public final class BillTo extends Address {
     }
 
     protected void generateRequest() {
-        super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_STREET, this.getBillToStreet()));
-        super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_STREET2, this.getBillToStreet2()));
-        super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_CITY, this.getBillToCity()));
-        super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_STATE, this.getBillToState()));
+        super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_BILLTOSTREET, this.getBillToStreet()));
+        super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_BILLTOSTREET2, this.getBillToStreet2()));
+        super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_BILLTOCITY, this.getBillToCity()));
+        super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_BILLTOSTATE, this.getBillToState()));
         super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_BILLTOCOUNTRY, this.getBillToCountry()));
-        super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_ZIP, this.getBillToZip()));
+        super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_BILLTOZIP, this.getBillToZip()));
         super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_PHONENUM, this.getBillToPhone()));
         super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_BILLTOPHONE2, this.getBillToPhone2()));
-        super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_EMAIL, this.getBillToEmail()));
-        super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_FAX, this.getBillToFax()));
-        super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_FIRSTNAME, this.getBillToFirstName()));
-        super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_MIDDLENAME, this.getBillToMiddleName()));
-        super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_LASTNAME, this.getBillToLastName()));
-        super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_HOMEPHONE, billToHomePhone));
-        super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_COMPANYNAME, billToCompanyName));
+        super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_BILLTOEMAIL, this.getBillToEmail()));
+        super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_BILLTOFAX, this.getBillToFax()));
+        super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_BILLTOFIRSTNAME, this.getBillToFirstName()));
+        super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_BILLTOMIDDLENAME, this.getBillToMiddleName()));
+        super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_BILLTOLASTNAME, this.getBillToLastName()));
+        super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_BILLTOHOMEPHONE, billToHomePhone));
+        super.getRequestBuffer().append(PayflowUtility.appendToRequest(PayflowConstants.PARAM_BILLTOCOMPANYNAME, billToCompanyName));
     }
 }

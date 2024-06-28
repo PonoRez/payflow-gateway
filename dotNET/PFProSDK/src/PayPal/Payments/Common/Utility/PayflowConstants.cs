@@ -883,21 +883,21 @@ namespace PayPal.Payments.Common.Utility
         /// </summary>
         internal const String PARAM_CHKTYPE = "CHKTYPE";
         /// <summary>
-        /// Payflow Param STREET
+        /// Payflow Param BILLTOSTREET
         /// </summary>
-        internal const String PARAM_STREET = "BILLTOSTREET";
+        internal const String PARAM_BILLTOSTREET = "BILLTOSTREET";
         /// <summary>
         /// Payflow Param BILLTOSTREET2
         /// </summary>
         internal const String PARAM_BILLTOSTREET2 = "BILLTOSTREET2";
         /// <summary>
-        /// Payflow Param CITY
+        /// Payflow Param BILLTOCITY
         /// </summary>
-        internal const String PARAM_CITY = "BILLTOCITY";
+        internal const String PARAM_BILLTOCITY = "BILLTOCITY";
         /// <summary>
-        /// Payflow Param STATE
+        /// Payflow Param BILLTOSTATE
         /// </summary>
-        internal const String PARAM_STATE = "BILLTOSTATE";
+        internal const String PARAM_BILLTOSTATE = "BILLTOSTATE";
         /// <summary>
         /// Payflow Param COUNTRY
         /// </summary>
@@ -909,37 +909,37 @@ namespace PayPal.Payments.Common.Utility
         /// </summary>
         internal const String PARAM_BILLTOCOUNTRY = "BILLTOCOUNTRY";
         /// <summary>
-        /// Payflow Param ZIP
+        /// Payflow Param BILLTOZIP
         /// </summary>
-        internal const String PARAM_ZIP = "BILLTOZIP";
+        internal const String PARAM_BILLTOZIP = "BILLTOZIP";
         /// <summary>
-        /// Payflow Param PHONENUM
+        /// Payflow Param BILLTOPHONENUM
         /// </summary>
-        internal const String PARAM_PHONENUM = "BILLTOPHONENUM";
+        internal const String PARAM_BILLTOPHONENUM = "BILLTOPHONENUM";
         /// <summary>
         /// Payflow Param BILLTOPHONE2
         /// </summary>
         internal const String PARAM_BILLTOPHONE2 = "BILLTOPHONE2";
         /// <summary>
-        /// Payflow Param EMAIL
+        /// Payflow Param BILLTOEMAIL
         /// </summary>
-        internal const String PARAM_EMAIL = "BILLTOEMAIL";
+        internal const String PARAM_BILLTOEMAIL = "BILLTOEMAIL";
         /// <summary>
-        /// Payflow Param FAX
+        /// Payflow Param BILLTOFAX
         /// </summary>
-        internal const String PARAM_FAX = "BILLTOFAX";
+        internal const String PARAM_BILLTOFAX = "BILLTOFAX";
         /// <summary>
-        /// Payflow Param FIRSTNAME
+        /// Payflow Param BILLTOFIRSTNAME
         /// </summary>
-        internal const String PARAM_FIRSTNAME = "BILLTOFIRSTNAME";
+        internal const String PARAM_BILLTOFIRSTNAME = "BILLTOFIRSTNAME";
         /// <summary>
-        /// Payflow Param MIDDLENAME
+        /// Payflow Param BILLTOMIDDLENAME
         /// </summary>
-        internal const String PARAM_MIDDLENAME = "BILLTOMIDDLENAME";
+        internal const String PARAM_BILLTOMIDDLENAME = "BILLTOMIDDLENAME";
         /// <summary>
-        /// Payflow Param LASTNAME
+        /// Payflow Param BILLTOLASTNAME
         /// </summary>
-        internal const String PARAM_LASTNAME = "BILLTOLASTNAME";
+        internal const String PARAM_BILLTOLASTNAME = "BILLTOLASTNAME";
         /// <summary>
         /// Payflow Param HOMEPHONE
         /// </summary>

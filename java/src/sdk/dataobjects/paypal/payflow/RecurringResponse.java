@@ -612,11 +612,11 @@ public final class RecurringResponse extends BaseResponseDataObject {
         maxFailPayments = (String) ResponseHashTable.get(PayflowConstants.PARAM_MAXFAILPAYMENTS);
         numFailPayments = (String) ResponseHashTable.get(PayflowConstants.PARAM_NUMFAILPAYMENTS);
         retryNumDays = (String) ResponseHashTable.get(PayflowConstants.PARAM_RETRYNUMDAYS);
-        companyName = (String) ResponseHashTable.get(PayflowConstants.PARAM_COMPANYNAME);
+        companyName = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOCOMPANYNAME);
         // Since Recurring Billing was never updated to support "BILLTO" parameters, overriding with older NVPs.
         name = (String) ResponseHashTable.get(PayflowConstants.PARAM_NAME);
-        firstName = (String) ResponseHashTable.get(PayflowConstants.PARAM_FIRSTNAME);
-        middleName = (String) ResponseHashTable.get(PayflowConstants.PARAM_MIDDLENAME);
+        firstName = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOFIRSTNAME);
+        middleName = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOMIDDLENAME);
         lastname = (String) ResponseHashTable.get("LASTNAME");
         street = (String) ResponseHashTable.get("STREET");
         city = (String) ResponseHashTable.get("CITY");
@@ -663,11 +663,11 @@ public final class RecurringResponse extends BaseResponseDataObject {
         ResponseHashTable.remove(PayflowConstants.PARAM_MAXFAILPAYMENTS);
         ResponseHashTable.remove(PayflowConstants.PARAM_NUMFAILPAYMENTS);
         ResponseHashTable.remove(PayflowConstants.PARAM_RETRYNUMDAYS);
-        ResponseHashTable.remove(PayflowConstants.PARAM_COMPANYNAME);
+        ResponseHashTable.remove(PayflowConstants.PARAM_BILLTOCOMPANYNAME);
         ResponseHashTable.remove(PayflowConstants.PARAM_NAME);
-        ResponseHashTable.remove(PayflowConstants.PARAM_FIRSTNAME);
-        ResponseHashTable.remove(PayflowConstants.PARAM_MIDDLENAME);
-        ResponseHashTable.remove(PayflowConstants.PARAM_LASTNAME);
+        ResponseHashTable.remove(PayflowConstants.PARAM_BILLTOFIRSTNAME);
+        ResponseHashTable.remove(PayflowConstants.PARAM_BILLTOMIDDLENAME);
+        ResponseHashTable.remove(PayflowConstants.PARAM_BILLTOLASTNAME);
         ResponseHashTable.remove("STREET");
         ResponseHashTable.remove("CITY");
         ResponseHashTable.remove("STATE");

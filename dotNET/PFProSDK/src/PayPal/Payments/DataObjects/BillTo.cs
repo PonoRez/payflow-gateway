@@ -395,19 +395,19 @@ namespace PayPal.Payments.DataObjects
 		{
 			try
 			{
-				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_STREET, this.BillToStreet));
+				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_BILLTOSTREET, this.BillToStreet));
 				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_BILLTOSTREET2, this.BillToStreet2));
-				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_CITY, this.BillToCity));
-				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_STATE, this.BillToState));
+				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_BILLTOCITY, this.BillToCity));
+				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_BILLTOSTATE, this.BillToState));
 				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_BILLTOCOUNTRY, this.BillToCountry));
-				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_ZIP, this.BillToZip));
-				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_PHONENUM, this.BillToPhone));
+				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_BILLTOZIP, this.BillToZip));
+				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_BILLTOPHONENUM, this.BillToPhone));
 				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_BILLTOPHONE2, this.BillToPhone2));
-				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_EMAIL, this.BillToEmail));
-				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_FAX, this.BillToFax));
-				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_FIRSTNAME, this.BillToFirstName));
-				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_MIDDLENAME, this.BillToMiddleName));
-				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_LASTNAME, this.BillToLastName));
+				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_BILLTOEMAIL, this.BillToEmail));
+				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_BILLTOFAX, this.BillToFax));
+				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_BILLTOFIRSTNAME, this.BillToFirstName));
+				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_BILLTOMIDDLENAME, this.BillToMiddleName));
+				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_BILLTOLASTNAME, this.BillToLastName));
 				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_HOMEPHONE, mBillToHomePhone));
 				RequestBuffer.Append(PayflowUtility.AppendToRequest(PayflowConstants.PARAM_COMPANYNAME, mBillToCompanyName));
 			}

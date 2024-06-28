@@ -627,19 +627,19 @@ public final class PayflowConstants {
     /**
      * Payflow Param BILLTOSTREET
      */
-    protected static final String PARAM_STREET = "BILLTOSTREET";
+    protected static final String PARAM_BILLTOSTREET = "BILLTOSTREET";
     /**
      * Payflow Param BILLTOSTREET2
      */
-    protected static final String PARAM_STREET2 = "BILLTOSTREET2";
+    protected static final String PARAM_BILLTOSTREET2 = "BILLTOSTREET2";
     /**
      * Payflow Param BILLTOCITY
      */
-    protected static final String PARAM_CITY = "BILLTOCITY";
+    protected static final String PARAM_BILLTOCITY = "BILLTOCITY";
     /**
      * Payflow Param BILLTOSTATE
      */
-    protected static final String PARAM_STATE = "BILLTOSTATE";
+    protected static final String PARAM_BILLTOSTATE = "BILLTOSTATE";
     /**
      * Payflow Param COUNTRY
      */
@@ -653,7 +653,7 @@ public final class PayflowConstants {
     /**
      * Payflow Param BILLTOZIP
      */
-    protected static final String PARAM_ZIP = "BILLTOZIP";
+    protected static final String PARAM_BILLTOZIP = "BILLTOZIP";
     /**
      * Payflow Param PHONENUM
      */
@@ -663,29 +663,29 @@ public final class PayflowConstants {
      */
     protected static final String PARAM_BILLTOPHONE2 = "BILLTOPHONE2";
     /**
-     * Payflow Param EMAIL
+     * Payflow Param BILLTOEMAIL
      */
-    protected static final String PARAM_EMAIL = "BILLTOEMAIL";
+    protected static final String PARAM_BILLTOEMAIL = "BILLTOEMAIL";
     /**
-     * Payflow Param FAX
+     * Payflow Param BILLTOFAX
      */
-    protected static final String PARAM_FAX = "BILLTOFAX";
+    protected static final String PARAM_BILLTOFAX = "BILLTOFAX";
     /**
-     * Payflow Param FIRSTNAME
+     * Payflow Param BILLTOFIRSTNAME
      */
-    protected static final String PARAM_FIRSTNAME = "BILLTOFIRSTNAME";
+    protected static final String PARAM_BILLTOFIRSTNAME = "BILLTOFIRSTNAME";
     /**
-     * Payflow Param MIDDLENAME
+     * Payflow Param BILLTOMIDDLENAME
      */
-    protected static final String PARAM_MIDDLENAME = "BILLTOMIDDLENAME";
+    protected static final String PARAM_BILLTOMIDDLENAME = "BILLTOMIDDLENAME";
     /**
-     * Payflow Param LASTNAME
+     * Payflow Param BILLTOLASTNAME
      */
-    protected static final String PARAM_LASTNAME = "BILLTOLASTNAME";
+    protected static final String PARAM_BILLTOLASTNAME = "BILLTOLASTNAME";
     /**
-     * Payflow Param HOMEPHONE
+     * Payflow Param BILLTOHOMEPHONE
      */
-    protected static final String PARAM_HOMEPHONE = "BILLTOHOMEPHONE";
+    protected static final String PARAM_BILLTOHOMEPHONE = "BILLTOHOMEPHONE";
     /**
      * Payflow Param BROWSERTIME
      */
@@ -771,9 +771,9 @@ public final class PayflowConstants {
      */
     protected static final String PARAM_CUSTID = "CUSTID";
     /**
-     * Payflow Param COMPANYNAME
+     * Payflow Param BILLTOCOMPANYNAME
      */
-    protected static final String PARAM_COMPANYNAME = "BILLTOCOMPANYNAME";
+    protected static final String PARAM_BILLTOCOMPANYNAME = "BILLTOCOMPANYNAME";
     /**
      * Payflow Param CORPNAME
      */

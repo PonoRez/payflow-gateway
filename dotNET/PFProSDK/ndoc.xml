@@ -1628,9 +1628,9 @@
             Payflow Param CHKTYPE
             </summary>
         </member>
-        <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_STREET">
+        <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_BILLTOSTREET">
             <summary>
-            Payflow Param STREET
+            Payflow Param BILLTOSTREET
             </summary>
         </member>
         <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_BILLTOSTREET2">
@@ -1638,14 +1638,14 @@
             Payflow Param BILLTOSTREET2
             </summary>
         </member>
-        <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_CITY">
+        <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_BILLTOCITY">
             <summary>
-            Payflow Param CITY
+            Payflow Param BILLTOCITY
             </summary>
         </member>
-        <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_STATE">
+        <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_BILLTOSTATE">
             <summary>
-            Payflow Param STATE
+            Payflow Param BILLTOSTATE
             </summary>
         </member>
         <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_COUNTRY">
@@ -1658,14 +1658,14 @@
             Payflow Param BILLTOCOUNTRY
             </summary>
         </member>
-        <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_ZIP">
+        <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_BILLTOZIP">
             <summary>
-            Payflow Param ZIP
+            Payflow Param BILLTOZIP
             </summary>
         </member>
-        <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_PHONENUM">
+        <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_BILLTOPHONENUM">
             <summary>
-            Payflow Param PHONENUM
+            Payflow Param BILLTOPHONENUM
             </summary>
         </member>
         <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_BILLTOPHONE2">
@@ -1673,29 +1673,29 @@
             Payflow Param BILLTOPHONE2
             </summary>
         </member>
-        <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_EMAIL">
+        <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_BILLTOEMAIL">
             <summary>
-            Payflow Param EMAIL
+            Payflow Param BILLTOEMAIL
             </summary>
         </member>
-        <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_FAX">
+        <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_BILLTOFAX">
             <summary>
-            Payflow Param FAX
+            Payflow Param BILLTOFAX
             </summary>
         </member>
-        <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_FIRSTNAME">
+        <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_BILLTOFIRSTNAME">
             <summary>
-            Payflow Param FIRSTNAME
+            Payflow Param BILLTOFIRSTNAME
             </summary>
         </member>
-        <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_MIDDLENAME">
+        <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_BILLTOMIDDLENAME">
             <summary>
-            Payflow Param MIDDLENAME
+            Payflow Param BILLTOMIDDLENAME
             </summary>
         </member>
-        <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_LASTNAME">
+        <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_BILLTOLASTNAME">
             <summary>
-            Payflow Param LASTNAME
+            Payflow Param BILLTOLASTNAME
             </summary>
         </member>
         <member name="F:PayPal.Payments.Common.Utility.PayflowConstants.PARAM_HOMEPHONE">

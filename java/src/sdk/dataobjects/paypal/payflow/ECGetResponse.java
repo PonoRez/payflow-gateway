@@ -15,8 +15,6 @@
 
 package paypal.payflow;
 
-import paypal.payflow.ExpressCheckoutResponse;
-
 import java.util.Hashtable;
 
 /**
@@ -294,22 +292,22 @@ public class ECGetResponse extends ExpressCheckoutResponse {
     }
 
     protected void setParams(Hashtable ResponseHashTable) {
-        email = (String) ResponseHashTable.get(PayflowConstants.PARAM_EMAIL);
+        email = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOEMAIL);
         payerId = (String) ResponseHashTable.get(PayflowConstants.PARAM_PAYERID);
         payerStatus = (String) ResponseHashTable.get(PayflowConstants.PARAM_PAYERSTATUS);
         shipToName = (String) ResponseHashTable.get(PayflowConstants.PARAM_SHIPTONAME);
         // 04/08/2015 shipToFirstName and shipToLastName are not returned in the response, mapping only.
-        shipToFirstName = (String) ResponseHashTable.get(PayflowConstants.PARAM_FIRSTNAME);
-        shipToLastName = (String) ResponseHashTable.get(PayflowConstants.PARAM_LASTNAME);
+        shipToFirstName = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOFIRSTNAME);
+        shipToLastName = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOLASTNAME);
         shipToCountryCode = (String) ResponseHashTable.get(PayflowConstants.PARAM_SHIPTOCOUNTRY);
         shipToBusiness = (String) ResponseHashTable.get(PayflowConstants.PARAM_SHIPTOBUSINESS);
-        //firstName = (String) ResponseHashTable.get(PayflowConstants.PARAM_FIRSTNAME);
-        //lastName = (String) ResponseHashTable.get(PayflowConstants.PARAM_LASTNAME);
-        street = (String) ResponseHashTable.get(PayflowConstants.PARAM_STREET);
-        street2 = (String) ResponseHashTable.get(PayflowConstants.PARAM_STREET2);
-        city = (String) ResponseHashTable.get(PayflowConstants.PARAM_CITY);
-        state = (String) ResponseHashTable.get(PayflowConstants.PARAM_STATE);
-        zip = (String) ResponseHashTable.get(PayflowConstants.PARAM_ZIP);
+        //firstName = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOFIRSTNAME);
+        //lastName = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOLASTNAME);
+        street = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOSTREET);
+        street2 = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOSTREET2);
+        city = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOCITY);
+        state = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOSTATE);
+        zip = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOZIP);
         shipToStreet = (String) ResponseHashTable.get(PayflowConstants.PARAM_SHIPTOSTREET);
         shipToStreet2 = (String) ResponseHashTable.get(PayflowConstants.PARAM_SHIPTOSTREET2);
         shipToCity = (String) ResponseHashTable.get(PayflowConstants.PARAM_SHIPTOCITY);
@@ -320,7 +318,7 @@ public class ECGetResponse extends ExpressCheckoutResponse {
         ba_Flag = (String) ResponseHashTable.get(PayflowConstants.PARAM_BA_FLAG);
         addressStatus = (String) ResponseHashTable.get(PayflowConstants.PARAM_ADDRESSSTATUS);
 
-        ResponseHashTable.remove(PayflowConstants.PARAM_EMAIL);
+        ResponseHashTable.remove(PayflowConstants.PARAM_BILLTOEMAIL);
         ResponseHashTable.remove(PayflowConstants.PARAM_PAYERID);
         ResponseHashTable.remove(PayflowConstants.PARAM_PAYERSTATUS);
         ResponseHashTable.remove(PayflowConstants.PARAM_SHIPTONAME);
@@ -328,8 +326,8 @@ public class ECGetResponse extends ExpressCheckoutResponse {
         //ResponseHashTable.remove(PayflowConstants.PARAM_SHIPTOLASTNAME);
         ResponseHashTable.remove(PayflowConstants.PARAM_SHIPTOCOUNTRY);
         ResponseHashTable.remove(PayflowConstants.PARAM_SHIPTOBUSINESS);
-        ResponseHashTable.remove(PayflowConstants.PARAM_FIRSTNAME);
-        ResponseHashTable.remove(PayflowConstants.PARAM_LASTNAME);
+        ResponseHashTable.remove(PayflowConstants.PARAM_BILLTOFIRSTNAME);
+        ResponseHashTable.remove(PayflowConstants.PARAM_BILLTOLASTNAME);
         ResponseHashTable.remove(PayflowConstants.PARAM_SHIPTOSTREET);
         ResponseHashTable.remove(PayflowConstants.PARAM_SHIPTOSTREET2);
         ResponseHashTable.remove(PayflowConstants.PARAM_SHIPTOCITY);
@@ -338,11 +336,11 @@ public class ECGetResponse extends ExpressCheckoutResponse {
         ResponseHashTable.remove(PayflowConstants.PARAM_COUNTRYCODE);
         ResponseHashTable.remove(PayflowConstants.PARAM_PHONENUM);
         ResponseHashTable.remove(PayflowConstants.PARAM_BA_FLAG);
-        ResponseHashTable.remove(PayflowConstants.PARAM_STREET);
-        ResponseHashTable.remove(PayflowConstants.PARAM_STREET2);
-        ResponseHashTable.remove(PayflowConstants.PARAM_CITY);
-        ResponseHashTable.remove(PayflowConstants.PARAM_STATE);
-        ResponseHashTable.remove(PayflowConstants.PARAM_ZIP);
+        ResponseHashTable.remove(PayflowConstants.PARAM_BILLTOSTREET);
+        ResponseHashTable.remove(PayflowConstants.PARAM_BILLTOSTREET2);
+        ResponseHashTable.remove(PayflowConstants.PARAM_BILLTOCITY);
+        ResponseHashTable.remove(PayflowConstants.PARAM_BILLTOSTATE);
+        ResponseHashTable.remove(PayflowConstants.PARAM_BILLTOZIP);
         ResponseHashTable.remove(PayflowConstants.PARAM_ADDRESSSTATUS);
 
     }
