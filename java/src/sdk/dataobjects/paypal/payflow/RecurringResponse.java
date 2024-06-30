@@ -613,16 +613,16 @@ public final class RecurringResponse extends BaseResponseDataObject {
         numFailPayments = (String) ResponseHashTable.get(PayflowConstants.PARAM_NUMFAILPAYMENTS);
         retryNumDays = (String) ResponseHashTable.get(PayflowConstants.PARAM_RETRYNUMDAYS);
         companyName = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOCOMPANYNAME);
-        // Since Recurring Billing was never updated to support "BILLTO" parameters, overriding with older NVPs.
+        // Since Recurring Billing was never updated to support "BILLTO" parameters, using older NVPs.
         name = (String) ResponseHashTable.get(PayflowConstants.PARAM_NAME);
         firstName = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOFIRSTNAME);
         middleName = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOMIDDLENAME);
-        lastname = (String) ResponseHashTable.get("LASTNAME");
-        street = (String) ResponseHashTable.get("STREET");
-        city = (String) ResponseHashTable.get("CITY");
-        state = (String) ResponseHashTable.get("STATE");
-        zip = (String) ResponseHashTable.get("ZIP");
-        email = (String) ResponseHashTable.get("EMAIL");
+        lastname = (String) ResponseHashTable.get(PayflowConstants.PARAM_LASTNAME);
+        street = (String) ResponseHashTable.get(PayflowConstants.PARAM_STREET);
+        city = (String) ResponseHashTable.get(PayflowConstants.PARAM_CITY);
+        state = (String) ResponseHashTable.get(PayflowConstants.PARAM_STATE);
+        zip = (String) ResponseHashTable.get(PayflowConstants.PARAM_ZIP);
+        email = (String) ResponseHashTable.get(PayflowConstants.PARAM_EMAIL);
         country = (String) ResponseHashTable.get(PayflowConstants.PARAM_COUNTRY);
         phoneNum = (String) ResponseHashTable.get(PayflowConstants.PARAM_PHONENUM);
         shipToFName = (String) ResponseHashTable.get(PayflowConstants.PARAM_SHIPTOFIRSTNAME);
@@ -668,11 +668,11 @@ public final class RecurringResponse extends BaseResponseDataObject {
         ResponseHashTable.remove(PayflowConstants.PARAM_BILLTOFIRSTNAME);
         ResponseHashTable.remove(PayflowConstants.PARAM_BILLTOMIDDLENAME);
         ResponseHashTable.remove(PayflowConstants.PARAM_BILLTOLASTNAME);
-        ResponseHashTable.remove("STREET");
-        ResponseHashTable.remove("CITY");
-        ResponseHashTable.remove("STATE");
-        ResponseHashTable.remove("ZIP");
-        ResponseHashTable.remove("EMAIL");
+        ResponseHashTable.remove(PayflowConstants.PARAM_STREET);
+        ResponseHashTable.remove(PayflowConstants.PARAM_CITY);
+        ResponseHashTable.remove(PayflowConstants.PARAM_STATE);
+        ResponseHashTable.remove(PayflowConstants.PARAM_ZIP);
+        ResponseHashTable.remove(PayflowConstants.PARAM_EMAIL);
         ResponseHashTable.remove(PayflowConstants.PARAM_COUNTRY);
         ResponseHashTable.remove(PayflowConstants.PARAM_PHONENUM);
         ResponseHashTable.remove(PayflowConstants.PARAM_SHIPTOFIRSTNAME);
