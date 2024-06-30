@@ -1369,10 +1369,10 @@ namespace PayPal.Payments.DataObjects
 			mAcct = (String)ResponseHashTable[PayflowConstants.PARAM_ACCT];
 			mLastName = (String)ResponseHashTable[PayflowConstants.PARAM_BILLTOLASTNAME];
             // due to issue where ACH doesn't support BILLTOFIRSTNAME we have to use legacy FIRSTNAME to get response value.
-            if (ResponseHashTable["FIRSTNAME"] == null)
+            if (ResponseHashTable[PayflowConstants.PARAM_FIRSTNAME] == null)
                 mFirstName = (String)ResponseHashTable[PayflowConstants.PARAM_BILLTOFIRSTNAME];
             else
-                mFirstName = (String)ResponseHashTable["FIRSTNAME"];
+                mFirstName = (String)ResponseHashTable[PayflowConstants.PARAM_FIRSTNAME];
             mAmt = (String)ResponseHashTable[PayflowConstants.PARAM_AMT];
 			mExpDate = (String)ResponseHashTable[PayflowConstants.PARAM_EXPDATE];
 			mTransTime = (String)ResponseHashTable[PayflowConstants.PARAM_TRANSTIME];
@@ -1436,7 +1436,7 @@ namespace PayPal.Payments.DataObjects
 			ResponseHashTable.Remove(PayflowConstants.PARAM_AMEXID);
 			ResponseHashTable.Remove(PayflowConstants.PARAM_AMEXPOSDATA);
             // This is here to deal with FIRSTNAME returned in ACH, not BILLTOFIRSTNAME.
-            ResponseHashTable.Remove("FIRSTNAME");
+            ResponseHashTable.Remove(PayflowConstants.PARAM_FIRSTNAME);
 			ResponseHashTable.Remove(PayflowConstants.PARAM_TRANSTIME);
 			ResponseHashTable.Remove(PayflowConstants.PARAM_CARDTYPE);
 			ResponseHashTable.Remove(PayflowConstants.PARAM_ORIGAMT);

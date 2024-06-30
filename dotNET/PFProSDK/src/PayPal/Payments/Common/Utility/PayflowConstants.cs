@@ -883,6 +883,38 @@ namespace PayPal.Payments.Common.Utility
         /// </summary>
         internal const String PARAM_CHKTYPE = "CHKTYPE";
         /// <summary>
+        /// Payflow Param FIRSTNAME
+        /// </summary>
+        internal const String PARAM_FIRSTNAME = "FIRSTNAME";
+        /// <summary>
+        /// Payflow Param LASTNAME
+        /// </summary>
+        internal const String PARAM_LASTNAME = "LASTNAME";
+        /// <summary>
+        /// Payflow Param STREET
+        /// </summary>
+        internal const String PARAM_STREET = "STREET";
+        /// <summary>
+        /// Payflow Param CITY
+        /// </summary>
+        internal const String PARAM_CITY = "CITY";
+        /// <summary>
+        /// Payflow Param LASTNAME
+        /// </summary>
+        internal const String PARAM_STATE = "STATE";
+        /// <summary>
+        /// Payflow Param LASTNAME
+        /// </summary>
+        internal const String PARAM_ZIP = "ZIP";
+        /// <summary>
+        /// Payflow Param LASTNAME
+        /// </summary>
+        internal const String PARAM_PHONENUM = "PHONENUM";
+        /// <summary>
+        /// Payflow Param EMAIL
+        /// </summary>
+        internal const String PARAM_EMAIL = "EMAIL";
+        /// <summary>
         /// Payflow Param BILLTOSTREET
         /// </summary>
         internal const String PARAM_BILLTOSTREET = "BILLTOSTREET";

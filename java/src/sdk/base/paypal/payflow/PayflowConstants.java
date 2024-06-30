@@ -625,6 +625,30 @@ public final class PayflowConstants {
      */
     protected static final String PARAM_CHKTYPE = "CHKTYPE";
     /**
+     * Payflow Param LASTNAME
+     */
+    protected static final String PARAM_LASTNAME = "LASTNAME";
+    /**
+     * Payflow Param STREET
+     */
+    protected static final String PARAM_STREET = "STREET";
+    /**
+     * Payflow Param CITY
+     */
+    protected static final String PARAM_CITY = "CITY";
+    /**
+     * Payflow Param STATE
+     */
+    protected static final String PARAM_STATE = "STATE";
+    /**
+     * Payflow Param ZIP
+     */
+    protected static final String PARAM_ZIP = "ZIP";
+    /**
+     * Payflow Param EMAIL
+     */
+    protected static final String PARAM_EMAIL = "EMAIL";
+    /**
      * Payflow Param BILLTOSTREET
      */
     protected static final String PARAM_BILLTOSTREET = "BILLTOSTREET";
