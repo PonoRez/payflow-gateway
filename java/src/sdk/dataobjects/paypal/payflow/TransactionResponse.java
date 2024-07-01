@@ -833,7 +833,8 @@ public final class TransactionResponse extends BaseResponseDataObject {
         ccTrans_PosData = (String) ResponseHashTable.get(PayflowConstants.PARAM_CCTRANS_POSDATA);
         parId= (String) ResponseHashTable.get(PayflowConstants.PARAM_PARID);
 
-        // items commented out below are due to being used in RecurringResponse too.
+        // items commented out below are due to being used in RecurringResponse
+        // and/or ECGetResponse, too.
         ResponseHashTable.remove(PayflowConstants.PARAM_RESULT);
         ResponseHashTable.remove(PayflowConstants.PARAM_PPREF);
         ResponseHashTable.remove(PayflowConstants.PARAM_PNREF);

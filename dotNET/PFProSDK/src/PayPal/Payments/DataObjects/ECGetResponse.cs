@@ -22,13 +22,14 @@ namespace PayPal.Payments.DataObjects
 		private String mEMail;
 		private String mPayerId;
 		private String mPayerStatus;
+		private String mFirstName;
+		private String mLastName;
+		private String mShipToName;
 		private String mShipToFirstName;
 		private String mShipToLastName;
 		private String mShipToCountry;
 		private String mShipToBusiness;
 		private String mAddrStatus;
-		private String mFirstName;
-		private String mLastName;
 		private String mShipToStreet;
 		private String mShipToStreet2;
 		private String mShipToCity;
@@ -37,6 +38,11 @@ namespace PayPal.Payments.DataObjects
 		private String mCountryCode;
 		private String mPhoneNum;
 		private String mBA_Flag;
+		private String mStreet;
+		private String mStreet2;
+		private String mCity;
+		private String mState;
+		private String mZip;
 
 		#endregion
 
@@ -83,6 +89,41 @@ namespace PayPal.Payments.DataObjects
 		public String PayerStatus
 		{
 			get {return mPayerStatus;}
+		}
+
+		/// <summary>
+		/// Gets the FirstName parameter
+		/// </summary>
+		/// <remarks>
+		/// <para>Maps to Payflow Parameter:</para>
+		/// <code>FIRSTNAME</code>
+		/// </remarks>
+		public String FirstName
+		{
+			get { return mFirstName; }
+		}
+		/// <summary>
+		/// Gets the LastName parameter
+		/// </summary>
+		/// <remarks>
+		/// <para>Maps to Payflow Parameter:</para>
+		/// <code>LASTNAME</code>
+		/// </remarks>
+		public String LastName
+		{
+			get { return mLastName; }
+		}
+
+		/// <summary>
+		/// Gets the shiptoname parameter
+		/// </summary>
+		/// <remarks>
+		/// <para>Maps to Payflow Parameter:</para>
+		/// <code>SHIPTONAME</code>
+		/// </remarks>
+		public String ShipToName
+		{
+			get { return mShipToName; }
 		}
 		/// <summary>
 		/// Gets the shiptofirstname parameter
@@ -138,28 +179,6 @@ namespace PayPal.Payments.DataObjects
 		public String AddressStatus
 		{
 			get {return mAddrStatus;}
-		}
-		/// <summary>
-		/// Gets the FirstName parameter
-		/// </summary>
-		/// <remarks>
-		/// <para>Maps to Payflow Parameter:</para>
-		/// <code>FIRSTNAME</code>
-		/// </remarks>
-		public String FirstName
-		{
-			get {return mFirstName;}
-		}
-		/// <summary>
-		/// Gets the LastName parameter
-		/// </summary>
-		/// <remarks>
-		/// <para>Maps to Payflow Parameter:</para>
-		/// <code>LASTNAME</code>
-		/// </remarks>
-		public String LastName
-		{
-			get {return mLastName;}
 		}
 		/// <summary>
 		/// Gets the ShipToStreet parameter
@@ -249,6 +268,61 @@ namespace PayPal.Payments.DataObjects
 		{
 			get {return mBA_Flag;}
 		}
+		/// <summary>
+		/// Gets the Street parameter
+		/// </summary>
+		/// <remarks>
+		/// <para>Maps to Payflow Parameter:</para>
+		/// <code>STREET</code>
+		/// </remarks>
+		public String Street
+		{
+			get { return mStreet; }
+		}
+		/// <summary>
+		/// Gets the Street2 parameter
+		/// </summary>
+		/// <remarks>
+		/// <para>Maps to Payflow Parameter:</para>
+		/// <code>STREET2</code>
+		/// </remarks>
+		public String Street2
+		{
+			get { return mStreet2; }
+		}
+		/// <summary>
+		/// Gets the City parameter
+		/// </summary>
+		/// <remarks>
+		/// <para>Maps to Payflow Parameter:</para>
+		/// <code>CITY</code>
+		/// </remarks>
+		public String City
+		{
+			get { return mCity; }
+		}
+		/// <summary>
+		/// Gets the State parameter
+		/// </summary>
+		/// <remarks>
+		/// <para>Maps to Payflow Parameter:</para>
+		/// <code>STATE</code>
+		/// </remarks>
+		public String State
+		{
+			get { return mState; }
+		}
+		/// <summary>
+		/// Gets the Zip parameter
+		/// </summary>
+		/// <remarks>
+		/// <para>Maps to Payflow Parameter:</para>
+		/// <code>ZIP</code>
+		/// </remarks>
+		public String Zip
+		{
+			get { return mZip; }
+		}
 
 		#endregion
 
@@ -262,44 +336,56 @@ namespace PayPal.Payments.DataObjects
 		{
 			try
 			{
-				mEMail = (String) ResponseHashTable[PayflowConstants.PARAM_BILLTOEMAIL];
+				mEMail = (String) ResponseHashTable[PayflowConstants.PARAM_EMAIL];
 				mPayerId = (String) ResponseHashTable[PayflowConstants.PARAM_PAYERID];
 				mPayerStatus = (String) ResponseHashTable[PayflowConstants.PARAM_PAYERSTATUS];
+				mFirstName = (String)ResponseHashTable[PayflowConstants.PARAM_FIRSTNAME];
+				mLastName = (String)ResponseHashTable[PayflowConstants.PARAM_LASTNAME];
+				mShipToName = (String)ResponseHashTable[PayflowConstants.PARAM_SHIPTONAME];
 				mShipToFirstName = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOFIRSTNAME];
 				mShipToLastName = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOLASTNAME];
 				mShipToCountry = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOCOUNTRY];
 				mShipToBusiness = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOBUSINESS];
 				mAddrStatus = (String) ResponseHashTable[PayflowConstants.PARAM_ADDRSTATUS];
-				mFirstName = (String) ResponseHashTable[PayflowConstants.PARAM_BILLTOFIRSTNAME];
-				mLastName = (String) ResponseHashTable[PayflowConstants.PARAM_BILLTOLASTNAME];
 				mShipToStreet = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOSTREET];
 				mShipToStreet2 = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOSTREET2];
 				mShipToCity = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOCITY];
 				mShipToState = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOSTATE];
 				mShipToZip = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOZIP];
 				mCountryCode = (String) ResponseHashTable[PayflowConstants.PARAM_COUNTRYCODE];
-				mPhoneNum = (String) ResponseHashTable[PayflowConstants.PARAM_BILLTOPHONENUM];
+				mPhoneNum = (String) ResponseHashTable[PayflowConstants.PARAM_PHONENUM];
 				mBA_Flag = (String) ResponseHashTable[PayflowConstants.PARAM_BA_FLAG];
+				mStreet = (String)ResponseHashTable[PayflowConstants.PARAM_STREET];
+				mStreet2 = (String)ResponseHashTable[PayflowConstants.PARAM_STREET2];
+				mCity = (String)ResponseHashTable[PayflowConstants.PARAM_CITY];
+				mState = (String)ResponseHashTable[PayflowConstants.PARAM_STATE];
+				mZip = (String)ResponseHashTable[PayflowConstants.PARAM_ZIP];
 
 
-				ResponseHashTable.Remove(PayflowConstants.PARAM_BILLTOEMAIL);
+				ResponseHashTable.Remove(PayflowConstants.PARAM_EMAIL);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_PAYERID);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_PAYERSTATUS);
+				ResponseHashTable.Remove(PayflowConstants.PARAM_FIRSTNAME);
+				ResponseHashTable.Remove(PayflowConstants.PARAM_LASTNAME);
+				ResponseHashTable.Remove(PayflowConstants.PARAM_SHIPTONAME);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_SHIPTOFIRSTNAME);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_SHIPTOLASTNAME);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_SHIPTOCOUNTRY);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_SHIPTOBUSINESS);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_ADDRSTATUS);
-				ResponseHashTable.Remove(PayflowConstants.PARAM_BILLTOFIRSTNAME);
-				ResponseHashTable.Remove(PayflowConstants.PARAM_BILLTOLASTNAME);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_SHIPTOSTREET);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_SHIPTOSTREET2);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_SHIPTOCITY);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_SHIPTOSTATE);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_SHIPTOZIP);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_COUNTRYCODE);
-				ResponseHashTable.Remove(PayflowConstants.PARAM_BILLTOPHONENUM);
+				ResponseHashTable.Remove(PayflowConstants.PARAM_PHONENUM);
 				ResponseHashTable.Remove(PayflowConstants.PARAM_BA_FLAG);
+				ResponseHashTable.Remove(PayflowConstants.PARAM_STREET);
+				ResponseHashTable.Remove(PayflowConstants.PARAM_STREET2);
+				ResponseHashTable.Remove(PayflowConstants.PARAM_CITY);
+				ResponseHashTable.Remove(PayflowConstants.PARAM_STATE);
+				ResponseHashTable.Remove(PayflowConstants.PARAM_ZIP);
 			}
 			catch (BaseException)
 			{
