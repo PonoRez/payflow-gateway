@@ -627,11 +627,19 @@ public final class PayflowConstants {
     /**
      * Payflow Param LASTNAME
      */
+    protected static final String PARAM_FIRSTNAME = "FIRSTNAME";
+    /**
+     * Payflow Param LASTNAME
+     */
     protected static final String PARAM_LASTNAME = "LASTNAME";
     /**
      * Payflow Param STREET
      */
     protected static final String PARAM_STREET = "STREET";
+    /**
+     * Payflow Param STREET2
+     */
+    protected static final String PARAM_STREET2 = "STREET2";
     /**
      * Payflow Param CITY
      */

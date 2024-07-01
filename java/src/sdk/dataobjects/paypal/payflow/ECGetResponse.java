@@ -26,13 +26,13 @@ public class ECGetResponse extends ExpressCheckoutResponse {
     private String email;
     private String payerId;
     private String payerStatus;
+    private String firstName;
+    private String lastName;
     private String shipToFirstName;
     private String shipToLastName;
     private String shipToName;
     private String shipToCountry;
     private String shipToBusiness;
-    //private String firstName;
-    //private String lastName;
     private String shipToStreet;
     private String shipToStreet2;
     private String shipToCity;
@@ -77,6 +77,26 @@ public class ECGetResponse extends ExpressCheckoutResponse {
     public String getPayerStatus() {
         return payerStatus;
     }
+
+    /**
+     * Gets the firstname parameter
+     *
+     * @return - String
+     *  <p>Maps to Payflow Parameter: FIRSTNAME
+     */
+    public String getFirstName() {
+      return firstName;
+    }
+
+    /**
+     * Gets the lastname parameter
+     *
+     * @return - String
+     *  <p>Maps to Payflow Parameter: LASTNAME
+     */
+    public String getLastName() {
+      return lastName;
+     }
 
     /**
      * Gets the shiptoname parameter
@@ -127,26 +147,6 @@ public class ECGetResponse extends ExpressCheckoutResponse {
     public String getShipToBusiness() {
         return shipToBusiness;
     }
-
-    /**
-     * Gets the firstname parameter
-     *
-     * @return - String
-     *  <p>Maps to Payflow Parameter: FIRSTNAME
-     */
-    //public String getFirstName() {
-      //  return firstName;
-    //}
-
-    /**
-     * Gets the lastname parameter
-     *
-     * @return - String
-     *  <p>Maps to Payflow Parameter: LASTNAME
-     */
-    //public String getLastName() {
-      //  return lastName;
-   // }
 
     /**
      * Gets the shiptostreet parameter
@@ -292,22 +292,22 @@ public class ECGetResponse extends ExpressCheckoutResponse {
     }
 
     protected void setParams(Hashtable ResponseHashTable) {
-        email = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOEMAIL);
+        email = (String) ResponseHashTable.get(PayflowConstants.PARAM_EMAIL);
         payerId = (String) ResponseHashTable.get(PayflowConstants.PARAM_PAYERID);
         payerStatus = (String) ResponseHashTable.get(PayflowConstants.PARAM_PAYERSTATUS);
+        firstName = (String) ResponseHashTable.get(PayflowConstants.PARAM_FIRSTNAME);
+        lastName = (String) ResponseHashTable.get(PayflowConstants.PARAM_LASTNAME);
         shipToName = (String) ResponseHashTable.get(PayflowConstants.PARAM_SHIPTONAME);
         // 04/08/2015 shipToFirstName and shipToLastName are not returned in the response, mapping only.
         shipToFirstName = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOFIRSTNAME);
         shipToLastName = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOLASTNAME);
         shipToCountry = (String) ResponseHashTable.get(PayflowConstants.PARAM_SHIPTOCOUNTRY);
         shipToBusiness = (String) ResponseHashTable.get(PayflowConstants.PARAM_SHIPTOBUSINESS);
-        //firstName = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOFIRSTNAME);
-        //lastName = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOLASTNAME);
-        street = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOSTREET);
-        street2 = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOSTREET2);
-        city = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOCITY);
-        state = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOSTATE);
-        zip = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOZIP);
+        street = (String) ResponseHashTable.get(PayflowConstants.PARAM_STREET);
+        street2 = (String) ResponseHashTable.get(PayflowConstants.PARAM_STREET2);
+        city = (String) ResponseHashTable.get(PayflowConstants.PARAM_CITY);
+        state = (String) ResponseHashTable.get(PayflowConstants.PARAM_STATE);
+        zip = (String) ResponseHashTable.get(PayflowConstants.PARAM_ZIP);
         shipToStreet = (String) ResponseHashTable.get(PayflowConstants.PARAM_SHIPTOSTREET);
         shipToStreet2 = (String) ResponseHashTable.get(PayflowConstants.PARAM_SHIPTOSTREET2);
         shipToCity = (String) ResponseHashTable.get(PayflowConstants.PARAM_SHIPTOCITY);
@@ -318,9 +318,11 @@ public class ECGetResponse extends ExpressCheckoutResponse {
         ba_Flag = (String) ResponseHashTable.get(PayflowConstants.PARAM_BA_FLAG);
         addressStatus = (String) ResponseHashTable.get(PayflowConstants.PARAM_ADDRESSSTATUS);
 
-        ResponseHashTable.remove(PayflowConstants.PARAM_BILLTOEMAIL);
+        ResponseHashTable.remove(PayflowConstants.PARAM_EMAIL);
         ResponseHashTable.remove(PayflowConstants.PARAM_PAYERID);
         ResponseHashTable.remove(PayflowConstants.PARAM_PAYERSTATUS);
+        ResponseHashTable.remove(PayflowConstants.PARAM_FIRSTNAME);
+        ResponseHashTable.remove(PayflowConstants.PARAM_LASTNAME);
         ResponseHashTable.remove(PayflowConstants.PARAM_SHIPTONAME);
         //ResponseHashTable.remove(PayflowConstants.PARAM_SHIPTOFIRSTNAME);
         //ResponseHashTable.remove(PayflowConstants.PARAM_SHIPTOLASTNAME);
@@ -336,11 +338,11 @@ public class ECGetResponse extends ExpressCheckoutResponse {
         ResponseHashTable.remove(PayflowConstants.PARAM_COUNTRYCODE);
         ResponseHashTable.remove(PayflowConstants.PARAM_PHONENUM);
         ResponseHashTable.remove(PayflowConstants.PARAM_BA_FLAG);
-        ResponseHashTable.remove(PayflowConstants.PARAM_BILLTOSTREET);
-        ResponseHashTable.remove(PayflowConstants.PARAM_BILLTOSTREET2);
-        ResponseHashTable.remove(PayflowConstants.PARAM_BILLTOCITY);
-        ResponseHashTable.remove(PayflowConstants.PARAM_BILLTOSTATE);
-        ResponseHashTable.remove(PayflowConstants.PARAM_BILLTOZIP);
+        ResponseHashTable.remove(PayflowConstants.PARAM_STREET);
+        ResponseHashTable.remove(PayflowConstants.PARAM_STREET2);
+        ResponseHashTable.remove(PayflowConstants.PARAM_CITY);
+        ResponseHashTable.remove(PayflowConstants.PARAM_STATE);
+        ResponseHashTable.remove(PayflowConstants.PARAM_ZIP);
         ResponseHashTable.remove(PayflowConstants.PARAM_ADDRESSSTATUS);
 
     }

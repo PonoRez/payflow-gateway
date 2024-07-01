@@ -1462,7 +1462,8 @@ namespace PayPal.Payments.DataObjects
 			ResponseHashTable.Remove(PayflowConstants.PARAM_CCTRANS_POSDATA);
 			ResponseHashTable.Remove(PayflowConstants.PARAM_PARID);
 
-			// Commented lines below to reserve Status for Recurring Inquiry
+			// Commented lines below to reserve parameters for Recurring Inquiry
+			// and/or Get Express Checkout Details
 			// ResponseHashTable.Remove(PayflowConstants.PARAM_STATUS);
 			// ResponseHashTable.Remove(PayflowConstants.PARAM_AMT);
 			// ResponseHashTable.Remove(PayflowConstants.PARAM_EXPDATE);

@@ -895,6 +895,10 @@ namespace PayPal.Payments.Common.Utility
         /// </summary>
         internal const String PARAM_STREET = "STREET";
         /// <summary>
+        /// Payflow Param STREET2
+        /// </summary>
+        internal const String PARAM_STREET2 = "STREET2";
+        /// <summary>
         /// Payflow Param CITY
         /// </summary>
         internal const String PARAM_CITY = "CITY";
