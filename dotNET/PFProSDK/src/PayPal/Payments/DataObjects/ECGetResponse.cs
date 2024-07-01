@@ -24,16 +24,16 @@ namespace PayPal.Payments.DataObjects
 		private String mPayerStatus;
 		private String mShipToFirstName;
 		private String mShipToLastName;
-		private String mShipToCountryCode;
+		private String mShipToCountry;
 		private String mShipToBusiness;
 		private String mAddrStatus;
 		private String mFirstName;
 		private String mLastName;
-		private String mStreet;
-		private String mStreet2;
-		private String mCity;
-		private String mState;
-		private String mPostalCode;
+		private String mShipToStreet;
+		private String mShipToStreet2;
+		private String mShipToCity;
+		private String mShipToState;
+		private String mShipToZip;
 		private String mCountryCode;
 		private String mPhoneNum;
 		private String mBA_Flag;
@@ -115,7 +115,7 @@ namespace PayPal.Payments.DataObjects
 		/// </remarks>
 		public String ShipToCountry
 		{
-			get {return mShipToCountryCode;}
+			get {return mShipToCountry;}
 		}
 		/// <summary>
 		/// Gets the ShipToBusiness parameter
@@ -170,7 +170,7 @@ namespace PayPal.Payments.DataObjects
 		/// </remarks>
 		public String ShipToStreet
 		{
-			get {return mStreet;}
+			get {return mShipToStreet;}
 		}
 		/// <summary>
 		/// Gets the ShipToStreet2 parameter
@@ -181,7 +181,7 @@ namespace PayPal.Payments.DataObjects
 		/// </remarks>
 		public String ShipToStreet2
 		{
-			get {return mStreet2;}
+			get {return mShipToStreet2;}
 		}
 		/// <summary>
 		/// Gets the ShipToCity parameter
@@ -192,7 +192,7 @@ namespace PayPal.Payments.DataObjects
 		/// </remarks>
 		public String ShipToCity
 		{
-			get {return mCity;}
+			get {return mShipToCity;}
 		}
 		/// <summary>
 		/// Gets the ShipToState parameter
@@ -203,7 +203,7 @@ namespace PayPal.Payments.DataObjects
 		/// </remarks>
 		public String ShipToState
 		{
-			get {return mState;}
+			get {return mShipToState;}
 		}
 		/// <summary>
 		/// Gets the ShipToZip parameter
@@ -214,7 +214,7 @@ namespace PayPal.Payments.DataObjects
 		/// </remarks>
 		public String ShipToZip
 		{
-			get {return mPostalCode;}
+			get {return mShipToZip;}
 		}
 		/// <summary>
 		/// Gets the CountryCode parameter
@@ -267,16 +267,16 @@ namespace PayPal.Payments.DataObjects
 				mPayerStatus = (String) ResponseHashTable[PayflowConstants.PARAM_PAYERSTATUS];
 				mShipToFirstName = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOFIRSTNAME];
 				mShipToLastName = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOLASTNAME];
-				mShipToCountryCode = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOCOUNTRY];
+				mShipToCountry = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOCOUNTRY];
 				mShipToBusiness = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOBUSINESS];
 				mAddrStatus = (String) ResponseHashTable[PayflowConstants.PARAM_ADDRSTATUS];
 				mFirstName = (String) ResponseHashTable[PayflowConstants.PARAM_BILLTOFIRSTNAME];
 				mLastName = (String) ResponseHashTable[PayflowConstants.PARAM_BILLTOLASTNAME];
-				mStreet = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOSTREET];
-				mStreet2 = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOSTREET2];
-				mCity = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOCITY];
-				mState = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOSTATE];
-				mPostalCode = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOZIP];
+				mShipToStreet = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOSTREET];
+				mShipToStreet2 = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOSTREET2];
+				mShipToCity = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOCITY];
+				mShipToState = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOSTATE];
+				mShipToZip = (String) ResponseHashTable[PayflowConstants.PARAM_SHIPTOZIP];
 				mCountryCode = (String) ResponseHashTable[PayflowConstants.PARAM_COUNTRYCODE];
 				mPhoneNum = (String) ResponseHashTable[PayflowConstants.PARAM_BILLTOPHONENUM];
 				mBA_Flag = (String) ResponseHashTable[PayflowConstants.PARAM_BA_FLAG];

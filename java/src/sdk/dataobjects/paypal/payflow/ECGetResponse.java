@@ -29,7 +29,7 @@ public class ECGetResponse extends ExpressCheckoutResponse {
     private String shipToFirstName;
     private String shipToLastName;
     private String shipToName;
-    private String shipToCountryCode;
+    private String shipToCountry;
     private String shipToBusiness;
     //private String firstName;
     //private String lastName;
@@ -115,7 +115,7 @@ public class ECGetResponse extends ExpressCheckoutResponse {
      *  <p>Maps to Payflow Parameter: SHIPTOCOUNTRY
      */
     public String getShipToCountry() {
-        return shipToCountryCode;
+        return shipToCountry;
     }
 
     /**
@@ -299,7 +299,7 @@ public class ECGetResponse extends ExpressCheckoutResponse {
         // 04/08/2015 shipToFirstName and shipToLastName are not returned in the response, mapping only.
         shipToFirstName = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOFIRSTNAME);
         shipToLastName = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOLASTNAME);
-        shipToCountryCode = (String) ResponseHashTable.get(PayflowConstants.PARAM_SHIPTOCOUNTRY);
+        shipToCountry = (String) ResponseHashTable.get(PayflowConstants.PARAM_SHIPTOCOUNTRY);
         shipToBusiness = (String) ResponseHashTable.get(PayflowConstants.PARAM_SHIPTOBUSINESS);
         //firstName = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOFIRSTNAME);
         //lastName = (String) ResponseHashTable.get(PayflowConstants.PARAM_BILLTOLASTNAME);
